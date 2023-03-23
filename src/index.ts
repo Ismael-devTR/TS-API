@@ -5,7 +5,7 @@ const app = express();
 app.use(express.json());
 const PORT = 3000;
 
-app.get("/ping", (_req, res) => {
+app.get("/pong", (_req, res) => {
   console.log("Someone pinged here!! " + new Date().toLocaleDateString());
   res.send("Pong");
 });
